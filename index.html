@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="mainbody">
+                    <div class="previousvalue" id="previousvalue1"></div>
+                    <div class="currentvalue"></div>
+                    <div class="buttons" id="buttons">
+                        <div class="row1">
+                            <button class="btn btn-secondary" value="7" onclick="getValue(event)">7</button>
+                            <button class="btn btn-secondary" value="8" onclick="getValue(event)">8</button>
+                            <button class="btn btn-secondary" value="9" onclick="getValue(event)">9</button>
+                            <button class="btn btn-warning operatorsum" value="+" onclick="getValue(event)">+</button>
+                        </div>
+                        <div class="row2">
+                            <button class="btn btn-secondary" value="4" onclick="getValue(event)">4</button>
+                            <button class="btn btn-secondary" value="5" onclick="getValue(event)">5</button>
+                            <button class="btn btn-secondary" value="6" onclick="getValue(event)">6</button>
+                            <button class="btn btn-warning operatorminus" value="-" onclick="getValue(event)">-</button>
+                        </div>
+                        <div class="row3">
+                            <button class="btn btn-secondary" value="1" onclick="getValue(event)">1</button>
+                            <button class="btn btn-secondary" value="2" onclick="getValue(event)">2</button>
+                            <button class="btn btn-secondary" value="3" onclick="getValue(event)">3</button>
+                            <button class="btn btn-warning operatordevision" value="/" onclick="getValue(event)">/</button>
+                            
+                        </div>
+                        <div class="row4">
+                            <button class="btn btn-secondary" value="" onclick="history.go(0)">AC</button>
+                            <button class="btn btn-secondary" value="0" onclick="getValue(event)">0</button>
+                            <button class="btn btn-warning operatormultiply" value="*" onclick="getValue(event)">*</button>
+                            <button class="btn btn-warning" value="=" onclick="calc()">=</button>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

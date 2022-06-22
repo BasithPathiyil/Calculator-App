@@ -1,0 +1,33 @@
+body {
+    background-color: #2d2d2d;
+}
+.container{
+    background-color: #2d2d2d;
+}
+.previousvalue{
+    display: none;
+}
+.btn{
+    height: 40px;
+    width: 70px;
+    
+}
+.currentvalue {
+    height: 40px;
+    width: 100%;
+    text-align: right;
+    border: 2px solid;
+    color: antiquewhite;
+    font-size: 30px;
+}
+.row1,
+.row2,
+.row3,
+.row4{
+    padding-top: 5px;
+
+}
+.row{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
